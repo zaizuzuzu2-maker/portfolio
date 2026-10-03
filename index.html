@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08080d">
+  <meta name="description" content="Aoi — Python scripter, builder and creative tinkerer.">
+  <meta property="og:title" content="Aoi — Caelestia Portfolio">
+  <meta property="og:description" content="Python scripter, builder and creative tinkerer.">
+  <title>Aoi — Caelestia Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2308080d'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23b8a5ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wallpaper"></div><div class="grain"></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+
+  <header class="shell">
+    <button class="shell-trigger" aria-label="Open shell"><i></i><i></i><i></i></button>
+    <div class="shell-panel" id="shellPanel">
+      <div class="module brand"><b>AOI.DEV</b><small>Caelestia portfolio</small></div>
+      <div class="module"><b>STATUS</b><small id="statusModule">Online</small></div>
+      <div class="module"><b>FOCUS</b><small>Python / UI</small></div>
+      <div class="module"><b>MODE</b><small>creative</small></div>
+      <div class="module"><b>LOCAL</b><small id="clock">--:--</small></div>
+      <nav>
+        <a href="#discord" class="magnetic">Discord</a>
+        <a href="#projects" class="magnetic">Projects</a>
+        <a href="#about" class="magnetic">About</a>
+        <a href="#contact" class="magnetic">Contact</a>
+        <button id="paletteBtn" class="magnetic">Re-palette</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-copy glass">
+        <div class="eyebrow"><span></span>Modern UI Design <3</div>
+        <h1>Aoi<span>.</span></h1>
+        <p class="lead">Python Scripter, GFX artist and Digital Artist!!</p>
+        <p class="muted">A special portfolio made by me :3 AND ILY GUYZZ</p>
+        <div class="actions">
+          <a class="btn primary magnetic" href="#projects">Explore projects</a>
+          <a class="btn magnetic" href="#about">About me</a>
+        </div>
+      </div>
+
+      <aside class="player glass spotify-widget">
+        <div class="widget-head">Favourite Song -> <em>▮▮▮▮</em></div>
+        <div class="spotify-frame">
+          <iframe id="spotifyEmbed" title="Spotify player — Hard 2 Face Reality" loading="lazy" width="100%" height="152" frameborder="0" allowfullscreen
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            src="https://open.spotify.com/embed/track/3XBMJF4N7ZdZrK30oGCxpN?utm_source=generator&amp;theme=0"></iframe>
+        </div>
+        <div class="spotify-actions">
+          <a class="btn primary magnetic" href="https://open.spotify.com/track/3XBMJF4N7ZdZrK30oGCxpN" target="_blank" rel="noopener">Open in Spotify ↗</a>
+          <a class="btn magnetic" href="https://open.spotify.com/search/hard%202%20face%20reality%20sped%20up" target="_blank" rel="noopener">Search For More!!</a>
+        </div>
+        <small class="note">This is my fav song!! suits the vibes ik :3</small>
+      </aside>
+    </section>
+
+    <section class="section" id="discord">
+      <div class="title"><span>01</span><h2>Discord presence</h2><small>live profile &amp; status</small></div>
+      <article class="discord glass" id="discordCard">
+        <div class="banner" id="discordBanner"></div>
+        <div class="discord-main">
+          <div class="avatar">
+            <span class="bubble">i love u</span>
+            <img id="discordAvatar" alt="Aoi's avatar" src="avatar.jpg">
+            <img id="discordDeco" class="deco" alt="" hidden>
+            <i id="discordStatus"></i>
+          </div>
+          <div>
+            <small>DISCORD</small>
+            <h3 id="discordName">Aoi</h3>
+            <p id="discordTag"></p>
+            <p id="discordBio" class="bio" hidden></p>
+            <div id="activityText" aria-live="polite">Loading presence…</div>
+          </div>
+          <button id="discordExpand" class="expand" aria-expanded="false" aria-label="Toggle details">⌄</button>
+        </div>
+        <div class="details">
+          <div><small>status</small><b id="statusText">online</b></div>
+          <div><small>activity</small><b id="detailActivity">—</b></div>
+          <div><small>source</small><b id="sourceText">Discord</b></div>
+        </div>
+        <div class="discord-links">
+          <a class="btn primary magnetic" id="profileLink" href="#" target="_blank" rel="noopener">Open profile ↗</a>
+          <a class="btn magnetic" id="inviteLink" href="#" target="_blank" rel="noopener">Join my server ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="title"><span>02</span><h2>Projects</h2><small>things being built</small></div>
+      <div class="grid">
+        <article class="project glass tilt">
+          <div class="project-top">⌁ <small>01 / language</small></div>
+          <h3>Chirp</h3>
+          <p>A Python-powered scripting language experiment for Discord bot development, with lexer, parser, runtime and bot-oriented syntax.</p>
+          <div class="tags"><i>Python</i><i>Interpreter</i><i>Discord</i></div>
+          <a href="#contact">Ask about it ↗</a>
+        </article>
+        <article class="project glass tilt">
+          <div class="project-top">⬡ <small>02 / builder</small></div>
+          <h3>BotForge</h3>
+          <p>A visual Discord bot builder concept with blocks, configuration, Discord-style preview, testing and project export.</p>
+          <div class="tags"><i>HTML</i><i>JavaScript</i><i>Python</i></div>
+          <a href="#contact">Ask about it ↗</a>
+        </article>
+        <article class="project glass tilt">
+          <div class="project-top">◌ <small>03 / web</small></div>
+          <h3>Caelestia Portfolio</h3>
+          <p>This site: animated shell modules, glass surfaces, wallpaper palette extraction, magnetic controls and live Discord presence.</p>
+          <div class="tags"><i>HTML</i><i>CSS</i><i>JS</i></div>
+          <a href="#discord">Inspect shell ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="card glass" id="about">
+        <div class="title"><span>03</span><h2>About</h2></div>
+        <p class="big">Building small systems that feel bigger than they are.</p>
+        <p class="muted">Name: <b>Aoi</b><br>Age: <b>15</b><br>Gender: <b>Male</b><br>Profession: <b>Python scripter and ethical hacker</b></p>
+      </div>
+      <div class="card glass" id="contact">
+        <div class="title"><span>04</span><h2>Contact</h2></div>
+        <p class="muted">Hang out, ask about a project, or just say hi.</p>
+        <a class="server" id="serverCard" href="#" target="_blank" rel="noopener">
+          <img id="serverIcon" alt="" hidden>
+          <div><b id="serverName">Join my Discord server</b><small id="serverCount">Click to join</small></div>
+          <span>↗</span>
+        </a>
+        <div class="actions">
+          <a class="btn primary magnetic" id="dmLink" href="#" target="_blank" rel="noopener">Message me on Discord ↗</a>
+          <button class="btn magnetic" id="copyProfile">Copy profile</button>
+        </div>
+        <small id="copyNotice" role="status"></small>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>AOI.DEV</span><span>Made • By • Aoi</span><span id="footerTime">--:--</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
